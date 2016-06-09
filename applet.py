@@ -163,10 +163,10 @@ def main():
         text = "OK"
 
     print(
-        "#[fg=colour{bg_color},bg=colour238]" +
-        "#[fg=colour{fg_color},bg=colour{bg_color}]" +
-        "{text} #[fg=colour238,bg=colour{bg_color}]" +
-        "#[fg=colour255,bg=colour238]".format(
+        ("#[fg=colour{bg_color},bg=colour238]"
+        "#[fg=colour{fg_color},bg=colour{bg_color}]"
+        " {text} #[fg=colour238,bg=colour{bg_color}]"
+        "#[fg=colour255,bg=colour238]").format(
             bg_color=bg_color,
             fg_color=fg_color,
             text=text)
